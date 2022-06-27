@@ -1,0 +1,14 @@
+1) Add wheel down for the left panel (gm4ps results pane) in order to load all the results.
+
+2) Append in a list the results and open them one by one and scrap, if it exists the link from the URL - compare it with the database.
+
+  2.1) If the result shows that the URL exists, scrape Tel. num from the currently openned result and compare it with the DB.
+    2.1.1) If it exists close DB, and the currently oppened result.
+  2.2) If the result show the the URL doesn't exist, scrape Tel. num from the currently openned result, scrape the Headers text and scrape the Location.
+       Try to scrape any other given links from the last result (targets will be given by xPath).
+  2.3) Automaticaly fill the proportional empty cells of the DB when the optional arguments have parsed through v5_phone_and_link.py script.
+  2.4) Open links and parse them through drive to scrap reversly the content of the URL for Tel. Numbers and Emails.
+  2.5) Scrap also images and pop up dialogue with preview and max dimentions of them (resizers will be taken into account from script URL2image),
+       in a multi selection environment.
+3) Find a way to calculate coastial teritories and parse them into gm4psScrp3r.
+3) To be continue...
